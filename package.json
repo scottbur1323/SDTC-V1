@@ -1,10 +1,11 @@
 {
-  "name": "myexpressapp",
+  "name": "my-express-app-v1",
   "version": "1.0.0",
-  "description": "",
+  "description": "A quick node.js server.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Chance Scott-Burke",
   "license": "ISC",
@@ -13,5 +14,13 @@
     "express": "^4.16.2",
     "node": "^9.7.0",
     "nodemon": "^1.17.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "heroku",
+    "node.js"
+  ],
+  "engines": {
+    "node": "8.9.1"
   }
 }
