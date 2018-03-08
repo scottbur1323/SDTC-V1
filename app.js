@@ -24,7 +24,7 @@ app.get("/:id", function (req, res) {
   var cohortById = findById(data, req.params.id)
   if (cohortById) {
     res.send({"data": cohortById})
-  } else res.send({error: {"message": "No record found!"}})
+  } else res.status(404).json({error: {"message": "No record found!"}})
 })
 
 
