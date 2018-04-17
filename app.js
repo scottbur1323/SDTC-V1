@@ -17,7 +17,7 @@ function findById(data, id) {
 }
 
 app.get('/', function(req, res) {
-  res.send({data})
+  res.send({"data": data})
 })
 
 app.get("/:id", function (req, res) {
@@ -28,5 +28,5 @@ app.get("/:id", function (req, res) {
 })
 
 
-
+console.log("running on port: " + port)
 app.listen(port)
